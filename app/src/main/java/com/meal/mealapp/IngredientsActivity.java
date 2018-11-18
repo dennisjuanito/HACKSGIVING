@@ -61,6 +61,7 @@ public class IngredientsActivity extends AppCompatActivity {
         public class MyViewHolder extends RecyclerView.ViewHolder {
 
             public TextView units, name, quantity, calories;
+            public Button restock, edit;
 
             public MyViewHolder(View view) {
                 super(view);
@@ -69,6 +70,8 @@ public class IngredientsActivity extends AppCompatActivity {
                 name = findViewById(R.id.ingredientName);
                 quantity = findViewById(R.id.quantityAmt);
                 calories = findViewById(R.id.caloriesAmt);
+                restock = findViewById(R.id.restockBtn);
+                edit = findViewById(R.id.editBtn);
             }
         }
 
@@ -92,6 +95,24 @@ public class IngredientsActivity extends AppCompatActivity {
             holder.name.setText(ingredient.getName());
             holder.quantity.setText(Double.toString(ingredient.getQuantitiy()));
             holder.calories.setText(ingredient.getCalories());
+
+            // restock product click listener
+            holder.restock.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
+
+            // edit quantity click listener
+            holder.edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
+
+
         }
 
         public int getItemCount() {
