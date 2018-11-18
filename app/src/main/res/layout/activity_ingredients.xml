@@ -17,8 +17,8 @@
         />
 
     <Button
-        android:layout_margin="5dp"
         android:id="@+id/restockAllBtn"
+        android:layout_margin="5dp"
         android:background="@drawable/bg_transparent_border_gray"
         android:layout_width="wrap_content"
         android:text="Restock All"
