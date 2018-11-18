@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/recipiesMsg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hmm, what's cooking?"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/opensansboldd"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/recipiesMsg2"
+        android:layout_below="@id/recipiesMsg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check out some of our delicious recipes below"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/opensansregular"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/recipiesMsg2"
+        android:background="@color/DarkGray"
+        android:id="@+id/hr1"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/hr1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewRecipies">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
